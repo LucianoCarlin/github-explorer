@@ -24,7 +24,18 @@ section.repository-list {
         display: inline-block;
         margin-top: 1rem;
         text-decoration: none;
-        color: #8257e6;
+        
+
+        button {
+          height: 3rem;
+          padding: 1rem;
+          border-radius: 8px;
+          background-color:  #8257e6;
+          cursor: pointer;
+          &:hover{
+            background-color:  #8257b1;
+          }
+        }
       }
     }
   }

@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 interface RepoItensprops {
   repository: {
     name: string;
     description: string;
     html_url: string;
-  }
+  };
 }
 
 export function RepositoryItem(props: RepoItensprops) {
@@ -15,8 +15,8 @@ export function RepositoryItem(props: RepoItensprops) {
       <p>{props.repository.description}</p>
 
       <a href={props.repository.html_url}>
-        Acessar repositorio
+        <button>Acessar repositorio</button>
       </a>
     </li>
-  )
+  );
 }
